@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title>Game đoán số </title>
+</head>
+
+<body>
+    Nhập khoảng : <input type="text" id="khoang"> Đoán số : <input type="text" id="doan_so"> <button onclick="choi()">Chơi</button>
+    <script>
+        let khoang = document.getElementById("khoang")
+        let so_ngau_nhien = parseInt(Math.random() * 10)
+        let doan_so = Number(document.getElementById("doan_so"))
+
+        function choi() {
+            let khoang = document.getElementById("khoang")
+            let so_ngau_nhien = parseInt(Math.random() * 10)
+            let doan_so = Number(document.getElementById("doan_so"))
+
+            while (so_ngau_nhien !== doan_so) {
+                doan_so = Number(prompt("Nhập lại số bạn đoán "))
+            }
+            document.write("Chúc mừng bạn đã chiến thắng ")
+        }
+    </script>
+</body>
+
+</html>

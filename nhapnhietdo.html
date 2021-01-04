@@ -1,0 +1,26 @@
+<html>
+
+<head></head>
+
+<body>
+    <script>
+        let nhietdo = Number(prompt("Nhập nhiệt độ :"))
+        while (nhietdo > 0) {
+            if (nhietdo > 100) {
+                alert("Hãy giảm nhiệt độ")
+                nhietdo = Number(prompt("Nhập nhiệt độ :"))
+            }
+            if (nhietdo < 20) {
+                alert("Hãy tăng nhiệt độ")
+                nhietdo = Number(prompt("Nhập nhiệt độ :"))
+            }
+            if (20 < nhietdo < 100) {
+                break;
+            }
+        }
+    </script>
+
+</body>
+
+
+</html>

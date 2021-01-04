@@ -1,0 +1,29 @@
+<html>
+
+<head></head>
+
+<body>
+    <script>
+        let f0 = 0
+        let f1 = 1
+            //alert(f0)
+            //alert(f1)
+        let f2
+        i = 0
+        n = Number(prompt("Nhập n"))
+        while (i < n - 2) {
+            f2 = f0 + f1
+            if (f2 % 5 != 0) {
+                //alert(f2)
+                f0 = f1
+                f1 = f2
+                i++
+            } else {
+                alert("Số fibonacci đầu tiên chia hết cho 5 là" + f2)
+                break
+            }
+        }
+    </script>
+</body>
+
+</html>
